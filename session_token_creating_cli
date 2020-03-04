@@ -1,0 +1,6 @@
+aws sts get-session-token --serial-number arn:aws-us-gov:iam::79789751:mfa/puspa.khanal@inseego.com --token-code 142754
+curl -XPUT -u elastic:changeme 'http://127.0.0.1:9200/_xpack/security/user/elastic/_password?pretty' -H 'Content-Type: application/json' -d'
+{
+  "password": "NewElasticPassword"
+}
+aws sts get-session-token --serial-number arn:aws-us-gov:iam::79789751:mfa/puspa.khanal@inseego.com --token-code 123456
