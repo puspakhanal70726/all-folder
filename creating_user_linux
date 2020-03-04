@@ -1,0 +1,6 @@
+username=puspa.khanal
+userkey="ssh-rsa AAAAB3NzaC1n0F71JrjOYEYvxk+0McbRNKA95umravjZszZMnruknq/FpYhqHsR3H+looYxH5ZZ/aG9jeBONetRyigmQgBM2ubt96Gqj5hej4EZElDxFPaleTQEVxtqwbOG1kEEKPSOBKhnGBYa6ohqsIiMuUW9dA6IhZlXLrg0ZPw5r1WukI1KtDK87Fqd3HZvZgMCVNYgAR4KThp4x5WlWw1iUwbCAMhR+8Gdv6gBdBxZ3hy3ubgitkB1rfUsx1hr9e6iebIQF0VKIfryUVJJH40v4X6sLyVkwQJesL2nQ== Steve Forrest"
+useradd -G admin $username
+mkdir -p /home/$username/.ssh
+echo $userkey >> /home/$username/.ssh/authorized_keys 
+ 
